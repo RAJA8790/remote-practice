@@ -33,7 +33,7 @@ jobs:
           terraform_version: "1.5.7"
       # CD dir
       - name: Change dir 
-        run: cd remote-practice/modules/vpc
+        run: cd modules/vpc
      
 
       # 3. Run standard Terraform commands
