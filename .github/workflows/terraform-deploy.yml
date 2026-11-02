@@ -33,7 +33,7 @@ jobs:
           terraform_version: "1.5.7"
       # CD dir
       - name: Change dir 
-        run: cd modules/vpc
+        run: cd dev/
      
 
       # 3. Run standard Terraform commands
@@ -41,4 +41,4 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -var-file="dev.tfvars"
