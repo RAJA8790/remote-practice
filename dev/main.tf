@@ -11,7 +11,7 @@ provider "aws" {
   region     = "us-west-1"
 }
 
-resource "aws-vpc-000023" "dev" {
+resource "aws_vpc" "dev-vpc-private-subnets" {
 
   name = var.name
   cidr = var.cidr
