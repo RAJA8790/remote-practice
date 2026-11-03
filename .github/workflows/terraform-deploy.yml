@@ -44,9 +44,9 @@ jobs:
 
       - name: Terraform Plan
         run: |
+          cd dev
           pwd
           ls -la
-          cd dev/
           terraform plan -var-file="dev.tfvars"
 
       # - name: Terraform Plan
