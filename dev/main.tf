@@ -24,6 +24,6 @@ resource "aws_vpc" "dev-vpc-private-subnets" {
   enable_vpn_gateway = true
 
   tags = {
-    Environment = "dev-env"
+    Environment = var.env
   }
 }
