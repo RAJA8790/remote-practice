@@ -42,7 +42,7 @@ jobs:
 
 
       -  name: pwd command 
-         run: pwd | ls ltr
+         run: pwd
         
       - name: Terraform Plan
         run: terraform plan -var-file="dev.tfvars"
